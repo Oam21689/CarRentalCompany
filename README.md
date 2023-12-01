@@ -40,9 +40,6 @@ This Python script provides a command-line interface for interacting with a MySQ
 
 3. Run the script with the following command:
 
-```bash
-  python run_sql.py CarRentalCompany.sql data.sql
-```
 
 4. Enter your MySQL credentials and host when prompted.
 5. Use the interactive menu to choose the action you want to perform.
