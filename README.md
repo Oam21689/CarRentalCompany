@@ -23,20 +23,26 @@ This Python script provides a command-line interface for interacting with a MySQ
 
 1. Ensure Python 3.x is installed on your system.
 2. Install `mysql-connector-python` using pip:
-   ```bash
-   pip install mysql-connector-python
-```
+
+  ```bash
+  pip install mysql-connector-python
+  ```
+
 ## Usage
 
 1. Clone the repository.
 2. Navigate into the cloned repo
+
 	```bash
 	cd CarRentalCompany
-```
+  ```
+
 3. Run the script with the following command:
+
 	```bash
 	python run_sql.py CarRentalCompany.sql data.sql
 	```
+
 4. Enter your MySQL credentials and host when prompted.
 5. Use the interactive menu to choose the action you want to perform.
 
