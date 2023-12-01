@@ -33,9 +33,9 @@ This Python script provides a command-line interface for interacting with a MySQ
 1. Clone the repository.
 2. Navigate into the cloned repo
 
-	```bash
+```bash
 	cd CarRentalCompany
-  ```
+```
 
 
 3. Run the script with the following command:
