@@ -1,0 +1,68 @@
+The following test queries operate under the hood.
+Please run the python script....
+
+=======================================================================
+List All Cars:
+SELECT * FROM Cars;
+
+Find Available Cars:
+SELECT * FROM Cars WHERE MaintenanceStatus = 'OK';
+
+List Customers:
+SELECT * FROM Customers;
+
+Find Specific Car by Registration Number:
+SELECT * FROM Cars WHERE RegistrationNumber = 'YourRegistrationNumber';
+
+List All Rentals:
+SELECT * FROM Rentals;
+
+Show Car Rentals for a Specific Customer:
+SELECT * FROM Rentals WHERE CustomerID = YourCustomerID;
+
+List Cars in Need of Maintenance:
+SELECT * FROM Cars WHERE MaintenanceStatus = 'Due';
+
+Display Cars Currently Under Maintenance:
+SELECT * FROM Cars WHERE MaintenanceStatus = 'In';
+
+Show Maintenance History of a Specific Car:
+SELECT * FROM Maintenance WHERE CarID = YourCarID;
+
+Find Employees at a Specific Location:
+SELECT * FROM Employees WHERE LocationID = YourLocationID;
+
+Calculate Total Earnings from Rentals:
+SELECT SUM(Price) FROM Rentals;
+
+List All Reservations:
+SELECT * FROM Reservations;
+
+Show All Maintenance Records with Costs Above a Certain Value:
+SELECT * FROM Maintenance WHERE Cost > YourCostValue;
+
+Find Cars by Make and Model:
+SELECT * FROM Cars WHERE Make = 'YourMake' AND Model = 'YourModel';
+
+List All Payments:
+SELECT * FROM Payments;
+
+Show Reservations for a Specific Car:
+SELECT * FROM Reservations WHERE CarID = YourCarID;
+
+Update Maintenance Status for a Car:
+UPDATE Cars SET MaintenanceStatus = 'YourStatus' WHERE CarID = YourCarID;
+
+List Cars and Their Current Locations:
+SELECT Cars.CarID, Cars.Make, Cars.Model, Locations.Address 
+FROM Cars 
+JOIN Locations ON Cars.CurrentLocationID = Locations.LocationID;
+
+Show Total Maintenance Costs for Each Car:
+SELECT CarID, SUM(Cost) AS TotalCost 
+FROM Maintenance 
+GROUP BY CarID;
+
+List Cars Rented in a Specific Time Period:
+SELECT * FROM Rentals 
+WHERE RentalDate BETWEEN 'YourStartDate' AND 'YourEndDate';
