@@ -140,6 +140,9 @@ def main():
         print(f"Error: {err}")
         connection = None
     finally:
+        cursor = connection.cursor()
+        cursor.execute(f"DROP DATABASE {database_name}")
+        cursor.close()
         if connection and connection.is_connected():
             connection.close()
 
